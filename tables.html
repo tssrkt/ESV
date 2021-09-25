@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Siddha - Tables</title>
+    <link rel="stylesheet" href="css/fonts.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<header>
+	<nav>
+		<ul class="menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="erudit.html">Erudit</a></li>
+			<li><a href="tables.html" class="active">Tables</a></li>
+			<li><a href="random.html">Random</a></li>
+			<li><a href="other.html">Other</a></li>
+		</ul>
+	</nav>
+	</header>
+	<main>
+		<div class="tbl-wrap">
+			<ul class="settings s1">
+				<li id="mernost">
+					<label>Мерность</label>
+					<input type="text" name="" value="3">
+					<span class="prv"></span>
+					<span class="nxt"></span>
+				</li>
+				<li id="numbers">
+					<label>Цифры</label>
+					<input type="text" name="" value="1">
+					<span class="prv"></span>
+					<span class="nxt"></span>
+				</li>
+				<li id="objects">
+					<label>Объекты</label>
+					<input type="text" name="" value="1">
+					<span class="prv"></span>
+					<span class="nxt"></span>
+				</li>
+			</ul>
+			<ul class="settings s2">
+				<li>
+					<input type="checkbox" name="tbl" id="ch1">
+					<label for="ch1">Цветные цифры</label>
+				</li>
+				<li>
+					<input type="checkbox" name="tbl" id="ch2">
+					<label for="ch2">Цветные ячейки</label>
+				</li>
+				<li>
+					<input type="checkbox" name="tbl" id="ch3">
+					<label for="ch3">Фигуры</label>
+				</li>
+				<li>
+					<input type="checkbox" name="tbl" id="ch4">
+					<label for="ch4">Рисунки</label>
+				</li>
+			</ul>
+			<button id="create_table">Start</button>
+			
+			<table id="tbl">
+				<tr>
+					<td>5</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>7</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>8</td>
+					<td>3</td>
+				</tr>
+			</table>
+		</div>
+		<div class="table_info">
+			<h3><span class="tbl_name">Есмеральда 123 - 3х3(1)</span></h3>
+			<p>Название таблицы генерируется автоматически: первое слово берется из списка, трехзначная цифра генерируется случайным образом во имя избежания одинаковых названий и никакой смысловой нагрузки не несет. Цифры вида nxn представляют мерность, число в скобках - одно- двух- или трех-значность чисел (если в табличке только объекты - там будет слово "Объекты"). После обновления страницы все данные в списке "Прошлые таблицы" удаляются.</p>
+			<h4>Прошлые таблицы:</h4>
+			<ul class="tbls_lst">
+				<li>Пока отсутствуют.</li>
+			</ul>
+			<button class="save">Сохранить таблицу на диск</button>
+		</div>
+		
+	</main>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
